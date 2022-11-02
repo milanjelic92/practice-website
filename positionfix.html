@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Fixed</title>
+  </head>
+  <style>
+    body {
+      height: 3000px;
+    }
+    .div {
+      background-color: green;
+      color: white;
+      width: 100px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+    .entire {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-container {
+      width: 400px;
+      height: 170px;
+      background-color: white;
+      border-radius: 5px;
+    }
+    h1 {
+      font-family: Arial;
+      margin-left: 15px;
+    }
+    p {
+      font-family: Arial;
+      margin-left: 15px;
+    }
+    button {
+      font-family: Arial;
+      margin-left: 15px;
+      font-size: 15px;
+    }
+  </style>
+  <body>
+    <div class="div">right-sidebar</div>
+    <div class="entire">
+      <div class="modal-container">
+        <h1>Modal Title</h1>
+        <p>This is modal</p>
+        <button>Close</button>
+      </div>
+    </div>
+  </body>
+</html>

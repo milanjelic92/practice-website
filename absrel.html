@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute and Relative position</title>
+  </head>
+  <style>
+    body {
+      height: 3000px;
+    }
+    button {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: black;
+      font-size: 16px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      top: -20px;
+      left: -15px;
+    }
+    .grey {
+      width: 320px;
+      height: 180px;
+      background-color: grey;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+    .time {
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      padding: 4px;
+      right: 5px;
+      bottom: 5px;
+    }
+  </style>
+  <body>
+    <div class="grey">
+      <button>X</button>
+      <div class="time">0:29</div>
+    </div>
+  </body>
+</html>

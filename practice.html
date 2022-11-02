@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .search-button {
+      width: 600px;
+      height: 40px;
+      font-family: Arial;
+      font-size: 18px;
+      font-weight: 600;
+      padding-left: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: rgb(216, 216, 216);
+      border: 1px solid rgb(235, 229, 229);
+      border-radius: 25px;
+      margin-top: 10px;
+      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
+    }
+    .bellow-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .google-button {
+      background-color: rgb(250, 250, 250);
+      color: black;
+      width: 150px;
+      margin-right: 20px;
+      font-family: Arial;
+      font-size: 16px;
+      padding: 15px;
+      text-align: center;
+      font-weight: 600;
+      transition: background-color 0.15s;
+      cursor: pointer;
+    }
+    .lucky-button {
+      background-color: rgb(250, 250, 250);
+      color: black;
+      width: 150px;
+      font-family: Arial;
+      font-size: 16px;
+      padding: 15px;
+      text-align: center;
+      font-weight: 600;
+      transition: background-color 0.15s;
+      cursor: pointer;
+    }
+    .google-button:hover,
+    .lucky-button:hover {
+      background-color: rgb(227, 224, 224);
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <img class="logo-picture" src="Google_2015_logo.svg" alt="" />
+      <input
+        class="search-button"
+        type="text"
+        placeholder="Search Google or type a URL"
+      />
+    </div>
+    <div class="bellow-container">
+      <div class="google-button">Google Search</div>
+      <div class="lucky-button">I'm feeling lucky</div>
+    </div>
+  </body>
+</html>

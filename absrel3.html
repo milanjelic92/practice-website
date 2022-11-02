@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position absolute and relative v.3</title>
+  </head>
+  <style>
+    .container {
+      width: 300px;
+      height: 300px;
+      background-color: rgb(225, 225, 225);
+      display: inline-block;
+      position: relative;
+    }
+    .picture {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+    .price {
+      background-color: black;
+      color: white;
+      font-family: Arial;
+      font-size: 15px;
+      padding: 7px 10px;
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+    .overlay {
+      width: 300px;
+      height: 90px;
+      background-color: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      background-color: white;
+      color: black;
+      border: 1p solid black;
+      font-family: Arial;
+      padding: 7px 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <img class="picture" src="blank-gb967dac28_640.png" alt="" />
+      <div class="price">20% OFF</div>
+      <div class="overlay">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>

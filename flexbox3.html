@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox 3</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+    }
+    .container {
+      background-color: rgb(162, 82, 238);
+      width: 900px;
+      margin-top: 20px;
+      margin-left: 20px;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .home {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      font-family: Arial;
+    }
+    .download {
+      border: 1px solid white;
+      margin-right: 15px;
+      color: white;
+      font-family: Arial;
+      font-size: 16px;
+      padding: 8px 20px;
+      border-radius: 2px;
+    }
+    .search-bar {
+      margin-left: 20px;
+    }
+    .search {
+      width: 450px;
+      height: 30px;
+      border-radius: 15px;
+      border: none;
+    }
+    ::placeholder {
+      padding-left: 20px;
+      font-size: 14px;
+      font-family: Arial;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="home">Home</div>
+      <div class="search-bar">
+        <input class="search" type="text" placeholder="Search" />
+      </div>
+      <div class="download">Download</div>
+    </div>
+  </body>
+</html>

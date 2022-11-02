@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex 4 Practice</title>
+    <link rel="stylesheet" href="flex4.css" />
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+    }
+    .container {
+      width: 400px;
+      height: 150px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+      border-radius: 3px;
+      margin-top: 25px;
+      margin-left: 30px;
+    }
+    .profile-picture {
+      width: 50px;
+      margin-left: 15px;
+    }
+    .promotion {
+      flex: 1;
+      margin-left: 10px;
+    }
+
+    .cat-picture {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+    .flexbox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .chewy-flex {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    .chewy-text {
+      font-family: Arial;
+      font-weight: bold;
+    }
+    .inbox {
+      font-family: Arial;
+      color: rgb(165, 165, 165);
+      font-size: 14px;
+      padding-top: 10px;
+      padding-left: 20px;
+    }
+    .sale-text {
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .offer-text {
+      font-family: Arial;
+      color: rgb(165, 165, 165);
+      font-size: 14px;
+    }
+    .time {
+      font-family: Arial;
+      color: rgb(165, 165, 165);
+      font-size: 14px;
+      margin-right: 15px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <p class="inbox">ALL INBOXES</p>
+      <div class="flexbox">
+        <div class="profile-picture">
+          <img class="cat-picture" src="cat.jpg" alt="" />
+        </div>
+        <div class="promotion">
+          <div class="chewy-flex">
+            <div class="chewy-text">Lidl Promotions</div>
+            <div class="time">4:58 PM</div>
+          </div>
+
+          <div>
+            <p class="sale-text">Biggest sales of the year!</p>
+            <p class="offer-text">
+              Hey there! We are writting to tell you about our...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

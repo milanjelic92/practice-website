@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double Sidebar</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+    }
+    body {
+      height: 3000px;
+    }
+    .sidebar {
+      background-color: rgb(46, 45, 45);
+      width: 80px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+    .picture {
+      height: 60px;
+      width: 60px;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+    .profile {
+      width: 60px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+    .container {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .double-sidebar {
+      background-color: rgb(67, 67, 67);
+      width: 250px;
+      position: fixed;
+      left: 80px;
+      top: 0;
+      bottom: 0;
+    }
+    .info-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .info {
+      font-family: Arial;
+      color: white;
+      font-size: 14px;
+      margin-left: 15px;
+      font-weight: 500;
+    }
+    .plus {
+      font-family: Arial;
+      color: rgb(177, 177, 177);
+      margin-right: 20px;
+      font-size: 28px;
+    }
+    .new-videos {
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    p {
+      color: rgb(177, 177, 177);
+      font-family: Arial;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+    .hashtag {
+      margin-right: 10px;
+    }
+  </style>
+  <body>
+    <div class="sidebar">
+      <div class="container">
+        <div class="profile">
+          <img class="picture" src="cat.jpg" alt="" />
+        </div>
+        <div class="profile">
+          <img class="picture" src="cat2.jpg" alt="" />
+        </div>
+        <div class="profile">
+          <img class="picture" src="dog.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="double-sidebar">
+      <div class="info-container">
+        <div class="info">INFO</div>
+        <div class="plus">+</div>
+      </div>
+      <div class="new-videos">
+        <p class="hashtag">#</p>
+        <p>new-videos</p>
+      </div>
+      <div class="new-videos">
+        <p class="hashtag">#</p>
+        <p>updates</p>
+      </div>
+      <div class="new-videos">
+        <p class="hashtag">#</p>
+        <p>faq</p>
+      </div>
+    </div>
+  </body>
+</html>

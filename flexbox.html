@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Practice</title>
+  </head>
+  <style>
+    .container {
+      border: 1px solid rgb(212, 212, 212);
+      width: 250px;
+      height: 120px;
+      border-radius: 5px;
+    }
+    .flexbox {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .info {
+      font-family: Arial;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+    .button1 {
+      margin-right: 10px;
+      font-family: Arial;
+      font-size: 16px;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 15px;
+      background-color: rgb(64, 64, 181);
+    }
+    .button {
+      margin-right: 10px;
+      font-family: Arial;
+      font-size: 16px;
+      color: white;
+      background-color: rgb(64, 64, 181);
+      padding: 5px 15px;
+      border-radius: 15px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="flexbox">
+        <div class="info">Home</div>
+        <div class="button1">14</div>
+      </div>
+      <div class="flexbox">
+        <div class="info">Notifications</div>
+        <div class="button">3</div>
+      </div>
+      <div class="flexbox">
+        <div class="info">Messages</div>
+        <div class="button">5</div>
+      </div>
+    </div>
+  </body>
+</html>
